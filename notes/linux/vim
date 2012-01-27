@@ -1,0 +1,69 @@
+vim
+
+Command mode:
+
+delete text
+dd: delete current line
+ndd: delete n lines
+dw: delete the current word
+db: delete the previous word
+D: delete everything from the cursor to the end of the line
+c: do the same thing as d, and change to insert mode
+cc: delete the line's charaters, and keep the line
+J: delete the newline
+
+cut and paste
+yy: copy the current line
+nyy: copy n lines
+y$: copy from the cursor to the end of the line
+y0: copy from the cursor to the head of the line
+p: paste
+
+search
+/: search forward
+?: search backwards
+n: repeat search in a forward direction
+N: repeat search in a backward direction
+fx: find 'x' in the current line forward
+Fx: find 'x' in the current line backward
+
+navigation
+$: move to the end of the line, the same as 'end'
+0: move to the head of the line, the same as 'home'
+^: move to the first non-white charater
+
+w: move to the next word
+e: move to the end of the (next) word
+b: move to the previous word
+%: find the pairs matched
+
+nG: move to the n line, if n is missed, move to the last line
+gg: move to the first line
+n%: move to n% of the file
+
+H: move to the first(home) line of the screen
+M: move to the middle line of the screen
+L: move to the last line of the screen
+
+ctrl-g: show the current line infomation
+ctrl-u: turn the screen half screen backward
+ctrl-d: turn the screen half screen forward
+zz: turn the screen to make the current line in the middle of the screen
+zt: turn the screen to make the current line in the top of the screen
+zb: turn the screen to make the current line in the buttom of the screen
+
+miscellaneous
+.: repeat the last command
+u: undo the last command
+n<commond>: repeat <command> for n times
+
+insert
+i: change to insert mode
+a: move the cursor one bit forward, and change to insert mode
+o: add a newline after this line, and change to insert mode
+O: add a newline before this line, ...
+
+gg=G: format/indent an entire file
+
+Visual mode:
+v: change to visual mode. In this mode, you can select multiple lines

@@ -1,0 +1,30 @@
+process
+
+kill pid
+if failed, use kill -9 pid, which means forcibly
+
+killall command_name
+kill all the processes of the command
+
+
+job
+
+run in the background:
+unzip file.zip &
+
+watch all the jobs:
+jobs
+
+switch to the background job by its job number:
+%1
+fg %1
+
+exit the current running job, turn to sleeping:
+Ctrl+z
+
+restart the background job in the background:
+%1 &
+bg %1
+
+turn the last background job to the foreground:
+fg
