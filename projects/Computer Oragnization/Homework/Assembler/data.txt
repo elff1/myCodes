@@ -1,0 +1,9 @@
+Loop:sll	$t1,$s3,2	# temp
+	add $t1,$t1,$s6		# $t1
+	lw  $t0,0($t1)		# tmep
+	bne $t0,$s5, Exit	# go to
+	addi $s3,$s3,1		# i = i + 1
+	j Loop			# go to Loop
+Exit :
+
+

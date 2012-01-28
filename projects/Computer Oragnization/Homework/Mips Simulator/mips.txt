@@ -1,0 +1,8 @@
+Label_2:
+	sll $t1, $s3, 2
+	add $t1, $t1, $s6
+	lw $t0, 0($t1)
+	bne $s5, $t0, Label_1
+	addi $s3, $s3, 1
+	j Label_2
+Label_1:

@@ -1,12 +1,14 @@
 #include <stdio.h>
-#define MaxN 100000
+#include <cstdlib>
+#include <time.h>
+#define MaxN (100000)
 
 void qsort(int *a, int p, int q) {
 	int m, i, j, tmp;
 
 	i = p;
 	j = q;
-	m = a[(p + q) / 2];
+	m = a[rand() % (q - p + 1) + p];
 	do {
 		while(a[i] < m)
 			i++;
@@ -35,12 +37,20 @@ int main(void) {
 	for(i = 0; i < n; i++)
 		scanf("%d", &a[i]);
 
+	srand(time(0));
 	qsort(a, 0, n - 1);
 
-	printf("1");
-	for(i = 0; i < n - 1; i++)
-		printf(" %d", a[i]);
-	printf("\n");
+	if(a[n - 1] == 1) {
+		for(i = 1; i < n; i++)
+			printf("%d ", a[i]);
+		printf("2\n");
+	}
+	else {
+		printf("1");
+		for(i = 0; i < n - 1; i++)
+			printf(" %d", a[i]);
+		printf("\n");
+	}
 
 	return 0;
 }

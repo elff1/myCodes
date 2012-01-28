@@ -1,0 +1,14 @@
+NET "A"  LOC = "K13"  ;
+NET "B"  LOC = "K14"  ;
+NET "C"  LOC = "J13"  ;
+NET "G"  LOC = "J14"  ;
+NET "G2A"  LOC = "H13"  ;
+NET "G2B"  LOC = "H14"  ;
+NET "Y[0]"  LOC = "P11"  ;
+NET "Y[1]"  LOC = "P12"  ;
+NET "Y[2]"  LOC = "N12"  ;
+NET "Y[3]"  LOC = "P13"  ;
+NET "Y[4]"  LOC = "N14"  ;
+NET "Y[5]"  LOC = "L12"  ;
+NET "Y[6]"  LOC = "P14"  ;
+NET "Y[7]"  LOC = "K12"  ;
