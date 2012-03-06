@@ -2,10 +2,11 @@ def count_words(string)
   string.gsub!(/\W/, ' ').downcase!
   ans = Hash.new
   string.scan(/(\b\w+\b)/) do |word|
-    if ans.has_key?("#{word}")
-      ans["#{word}"] += 1
+    word = word[0]
+    if ans.has_key?(word)
+      ans[word] += 1
     else
-      ans["#{word}"] = 1
+      ans[word] = 1
     end
   end
   ans

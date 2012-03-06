@@ -29,11 +29,3 @@ class JellyBean < Dessert
     end
   end
 end
-
-a = JellyBean.new("a", 200, "efe")
-b = JellyBean.new("b", 20, "black licorice")
-puts a.healthy?
-puts a.delicious?
-
-puts b.healthy?
-puts b.delicious?
