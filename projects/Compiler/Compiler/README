@@ -1,0 +1,35 @@
+--For Built our compiler for C- that suitable for your machine, Make sure that your machine has installed gcc, flex and yacc
+
+--Firstly, run the shell build.sh to compile our source codes and generate a compiler (named CMinusCompiler) that can compile a C- program into nasm code.
+
+--secondly, run the shell make.sh with two argument $1 and $2.
+It will compiler the C- program $1 into a exetable file $2.
+If you obmit the seconde argument, the output file will be named "a.out" by default.
+
+notice: 
+--you can use the function input() to get an input and output(int para) to output a variable para in your C- program, it is define by the system.
+--If you want to see the nasm code for your codes, you can delete the last line in the shell make.sh before runing it.
+
+Files list:
+/test
+	the test cases
+generate.c/h
+	the source code of generating asm code function
+encode.c/h
+	the source code of asm code pattern
+analyze.c/h
+	the source code for built symbol table and type check
+symbol.c/h
+	the source code for symbol table utility
+util.c/h
+	some useful function for use
+globals.h
+	global data structures and type definitions
+parser.y
+	yacc program to generate a parser
+scanner.l
+	lex program to generate a scanner
+main.c
+	main function of our program
+build.sh, make.sh
+	shell program for users
