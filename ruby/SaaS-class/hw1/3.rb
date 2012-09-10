@@ -26,6 +26,7 @@ end
 
 words = ['cars', 'for', 'potatoes', 'racs', 'four','scar', 'creams', 'scream']
 #puts words
+puts combine_anagrams(words)
 combine_anagrams(words).each do |group|
   group.each {|word| print "#{word} "}
   print "\n"
