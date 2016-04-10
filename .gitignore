@@ -1,5 +1,12 @@
 .svn/
 *~
+*.tmp
+
+*.o
+*.a
+*.out
+*.exe
+
 
 # Windows image file caches
 Thumbs.db
