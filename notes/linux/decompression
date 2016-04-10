@@ -18,7 +18,7 @@ tar -xf archive.tar # Extract all files from archive.tar
 压缩：gzip FileName
 
 .tar.gz 和 .tgz
-解压：tar -zxvf FileName.tar.gz
+解压：tar -C target_folder -zxvf FileName.tar.gz
 压缩：tar -zcvf FileName.tar.gz DirName
 	-> z for gzip
 
